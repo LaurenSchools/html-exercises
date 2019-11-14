@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+         v2.0 | 20110126
+         License: none (public domain)
+      */
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video
+
+        body{
+            background-color: bisque;
+
+        }
+
+        div2 {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+
+        #full-wrapper {
+            width: 1600px;
+            height:900px;
+            background-color: bisque;
+            border: 0px solid purple;
+
+
+        }
+
+        a.Home:link {color: black; text-decoration: none; background-color: bisque;}
+        a.Home:visited {color: black;text-decoration: none; background-color: bisque;}
+        a.side2:link{color: white;text-decoration: none; background-color: darkred;}
+        a.side2:visited{color: white;text-decoration: none; background-color: darkred;}
+        a.side-links:link {color: White; text-decoration: none; background-color: darkred; }
+        a.side-links:visited {color: White;text-decoration: none; background-color: darkred; }
+
+
+
+
+        .side2 {
+            width: 200px;
+            height: 88px;
+            background-color: darkred;
+            text-align: center;
+            font-family: "Futura PT", sans-serif;
+            font-size: 20px;
+            color: white;
+            padding-top: 20px;
+            border: 1px solid black;
+
+        }
+
+        .side-links {
+            width: 200px;
+            height: 105px;
+            background-color: darkred;
+            text-align: center;
+            font-family: "Futura PT", sans-serif;
+            font-size: 20px;
+            color: white;
+            padding-top: 20px;
+
+        }
+
+        Header {
+            font-size: 100px;
+            font-family: "Futura PT", sans-serif;
+            background: bisque;
+            text-align: center;
+            margin: auto;
+            width: 1200px;
+
+        }
+
+
+        .pizza-top {
+            background-color: bisque;
+            height: 75px;
+            width: 75px;
+
+        }
+
+
+        .menu-items {
+            text-align: center;
+            font-family: "Futura PT",sans-serif;
+            font-size: 25px;
+            padding-right: 0px;
+            padding-bottom: 50px;
+        }
+
+
+        .collapsible {
+            background-color: darkgreen;
+            color: white;
+            cursor: pointer;
+            padding: 25px;
+            width: 700px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            float: right;
+
+        }
+
+        .active, .collapsible:hover {
+            background-color: darkgreen;
+        }
+
+        .collapsible:after {
+            content: '\002B';
+            color: white;
+            font-weight: bold;
+            margin-left: 5px;
+            width: 0px;
+            float: right;
+            background-color: darkgreen;
+
+        }
+
+        .active:after {
+            content: "\2212";
+        }
+
+        .content {
+            width: 700px;
+            float: right;
+            max-height: 0;
+            overflow: auto;
+            transition: max-height 0.2s ease-out;
+            background-color: White;}
+
+
+        #wrapper {
+
+            width: 800px;
+            height: 600px;
+            border: 0px solid black;
+            overflow: auto;
+            float: right;
+            margin-right: 450px;
+
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+<div id="full-wrapper">
+    <header>
+        <a><img src="Photos/pizza-icon.png" class="pizza-top"></a>
+        <a href="Home.html" class="Home">
+            Galactic Pizza
+        </a>
+        <a> <img src="Photos/pizza-icon-flip.png" class="pizza-top"></a>
+    </header>
+    <div>
+        <div class="menu-items">Build Your Own Pizza | Wings | Pasta | Appetizer <br> Specialty Pizzas | Salads | Desserts | Beverages</div>
+
+    </div>
+
+
+    <div id="wrapper">
+
+
+        <button class="collapsible">The Old School</button>
+
+        <div class="content">Ingredients:
+            Tomato sauce, mozzarella cheese, pepperoni, sausage, <br>
+            organic button mushrooms, organic green peppers, and organic red onions. <br> <br>
+            Prices: Small: 14.90  Medium: 19.30  Large: 22.85
+
+        </div>
+
+
+
+        <button class="collapsible"> Organic Veggie</button>
+
+        <div class="content">Tomato sauce, mozzarella cheese, organic button mushrooms, <br>
+            organic roma tomatoes, organic green peppers, and organic red onions. <br> <br>
+            Prices: Small: 14.90  Medium: 19.30  Large: 22.85
+
+        </div>
+
+
+
+        <button class="collapsible">The Shroomer</button>
+
+        <div class="content">Tomato sauce, mozzarella cheese, organic portabella mushrooms, <br>
+            organic shiitake mushrooms, and organic button mushrooms.<br> <br>
+            Prices: Small: 14.90  Medium: 19.30  Large: 22.85
+
+        </div>
+
+
+
+        <button class="collapsible">The Thailander</button>
+
+        <div class="content">Spicy Thai peanut sauce (contains gluten), mozzarella cheese, marinated free roam chicken, <br>
+            organic green onions, bean sprouts, shredded carrots, crushed peanuts, and fresh organic cilantro. <br> <br>
+            Prices: Small: 14.90  Medium: 19.30  Large: 22.85
+
+        </div>
+
+
+
+        <button class="collapsible">Pizza Alla Vodka</button>
+
+        <div class="content">Creamy tomato vodka sauce, mozzarella cheese, <br>
+            organic button mushrooms, prosciutto, and fresh organic basil.<br> <br>
+            Prices: Small: 14.90  Medium: 19.30  Large: 22.85
+
+        </div>
+
+
+
+        <button class="collapsible">The Mexicali</button>
+
+        <div class="content">Salsa Lisa cream sauce, mozzarella cheese, cheddar cheese, <br>
+            marinated free roam chicken, organic green onion, organic roma tomatoes, jalapeños, and organic cilantro. <br> <br>
+            Prices: Small: 14.90  Medium: 19.30  Large: 22.85
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <div2>
+        <div class="side2"> <a href="Contact.html" class="side-links">Contact</a> </div>
+        <div class="side2"> <a href="Menu.html" class="side-links">Menu</a> </div>
+        <div class="side2"> <a href="Order.html" class="side-links">Order Online</a> </div>
+        <div class="side2"> <a href="Vision.html" class="side-links">Vision</a> </div>
+        <div class="side2"> Catering </div>
+        <div class="side2"> Blog</div>
+
+    </div2>
+
+
+</div>
+
+
+
+
+
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+
+
+</body>
+
+
+</html>

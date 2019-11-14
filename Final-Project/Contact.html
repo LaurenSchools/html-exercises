@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+         v2.0 | 20110126
+         License: none (public domain)
+      */
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video
+
+        body{
+            background-color: bisque;
+
+        }
+
+        div2 {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+
+        h2 {
+            font-family: "Futura PT",sans-serif;
+
+        }
+
+        h3 {
+            font-family: "Futura PT",sans-serif;
+            font-size: medium;
+            font-weight: normal;
+
+        }
+
+        #info
+        {
+            float: left;
+            width: 350px;
+            border: 0px solid red;
+            text-align: center;
+            font-family: "Futura PT",sans-serif;
+            padding-top: 50px;
+
+        }
+
+        #map{
+
+            border: 0px solid green;
+            height: 600px;
+            margin: 0 0 0 400px;
+            border-left: 1px solid black;
+            padding-left: 50px;
+            padding-top: 50px;
+
+        }
+
+        .location {
+            padding-right: 140px;
+            text-align: center;
+        }
+
+
+        #wrapper {
+
+            width: 1000px;
+            height: 700px;
+            border: 0px solid black;
+            overflow: auto;
+            float: right;
+            padding-right: 200px;
+            padding-top: 50px;
+
+
+        }
+
+
+        #full-wrapper {
+            width: 1600px;
+            height:900px;
+            background-color: bisque;
+            border: 0px solid purple;
+
+
+        }
+
+        a.Home:link {color: black; text-decoration: none; background-color: bisque;}
+        a.Home:visited {color: black;text-decoration: none; background-color: bisque;}
+        a.side2:link{color: white;text-decoration: none; background-color: darkred;}
+        a.side2:visited{color: white;text-decoration: none; background-color: darkred;}
+        a.side-links:link {color: White; text-decoration: none; background-color: darkred; }
+        a.side-links:visited {color: White;text-decoration: none; background-color: darkred; }
+
+
+
+
+        .side2 {
+            width: 200px;
+            height: 105px;
+            background-color: darkred;
+            text-align: center;
+            font-family: "Futura PT", sans-serif;
+            font-size: 20px;
+            color: white;
+            padding-top: 20px;
+            border: 1px solid black;
+
+        }
+
+        .side-links {
+            width: 200px;
+            height: 105px;
+            background-color: darkred;
+            text-align: center;
+            font-family: "Futura PT", sans-serif;
+            font-size: 20px;
+            color: white;
+            padding-top: 20px;
+
+        }
+
+        Header {
+            font-size: 100px;
+            font-family: "Futura PT", sans-serif;
+            background: bisque;
+            text-align: center;
+            margin: auto;
+            width: 1200px;
+
+        }
+
+
+        .pizza-top {
+            background-color: bisque;
+            height: 75px;
+            width: 75px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+<div id="full-wrapper">
+    <header>
+        <a><img src="Photos/pizza-icon.png" class="pizza-top"></a>
+        <a href="Home.html" class="Home">
+            Galactic Pizza
+        </a>
+        <a> <img src="Photos/pizza-icon-flip.png" class="pizza-top"></a>
+    </header>
+
+
+
+    <div id="wrapper">
+
+        <div id="info">
+            <p> <h2>Contact Us @:</h2>
+            <h3>612•824•9100</h3> <br> <br> <br>
+
+            </p>
+            <p> <h2>Follow Us On:</h2>
+            <h3> Facebook <br>
+                Twitter <br>
+                Instagram<br>
+                Foursquare</h3>
+            </p>
+        </div>
+
+
+        <div id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2823.7040679782294!2d-93.290098884281!3d44.94968357564719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f627889a135f7b%3A0x3f7fd6ae8b514aed!2sGalactic%20Pizza!5e0!3m2!1sen!2sus!4v1573182857006!5m2!1sen!2sus" width="400" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <p>
+            <h3 class="location">Galactic Pizza <br>
+                2917 Lyndale Ave. S <br>
+                Minneapolis, MN, 55408 </h3>
+            </p>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div2>
+        <div class="side2"> <a href="Contact.html" class="side-links">Contact</a> </div>
+        <div class="side2"> <a href="Menu.html" class="side-links">Menu</a> </div>
+        <div class="side2"> <a href="Order.html" class="side-links">Order Online</a> </div>
+        <div class="side2"> <a href="Vision.html" class="side-links">Vision</a> </div>
+        <div class="side2"> Catering</a> </div>
+        <div class="side2"> Blog</a> </div>
+
+    </div2>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
